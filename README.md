@@ -1,0 +1,27 @@
+# ncnn-tools-docker
+
+使用Docker在本地运行NCNN的工具  
+Dockerfile for ncnn tools  
+
+适用于不想编译完整ncnn但是需要转换或者量化模型的需求  
+It is suitable for those who do not want to compile a complete ncnn but need to convert or quantize the model  
+
+## Tools
+目前可用：  
+Currently support:   
+
+```
+caffe2ncnn mxnet2ncnn ncnn2mem ncnnmerge onnx2ncnn  
+darknet2ncnn ncnn2int8 ncnn2table ncnnoptimize  
+```
+
+## Usage
+更改以下参数以切换不同的ncnn版本：  
+Change the following parameters to switch between different ncnn versions:  
+
+```dockerfile
+ARG NCNN_VERSION=<version>
+```
+
+## Thanks
+[ncnn](https://github.com/Tencent/ncnn)
