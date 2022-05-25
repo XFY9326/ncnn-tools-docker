@@ -16,7 +16,7 @@ ENV WORK_SPACE /ncnn-tools
 WORKDIR /ncnn-tools
 
 # Download tools
-ARG NCNN_VERSION=20220216
+ARG NCNN_VERSION=20220420
 RUN wget --no-check-certificate -O "${WORK_SPACE}/ncnn.zip" "https://github.com/Tencent/ncnn/releases/download/${NCNN_VERSION}/ncnn-${NCNN_VERSION}-ubuntu-2004-shared.zip"
 
 # Deploy tools
