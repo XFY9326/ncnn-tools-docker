@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 LABEL maintainer="XFY9326@xfy9326.github.io"
 
@@ -16,8 +16,8 @@ ENV WORK_SPACE /ncnn-tools
 WORKDIR /ncnn-tools
 
 # Download tools
-ARG NCNN_VERSION=20220420
-RUN wget --no-check-certificate -O "${WORK_SPACE}/ncnn.zip" "https://github.com/Tencent/ncnn/releases/download/${NCNN_VERSION}/ncnn-${NCNN_VERSION}-ubuntu-2004-shared.zip"
+ARG NCNN_VERSION=20220701
+RUN wget --no-check-certificate -O "${WORK_SPACE}/ncnn.zip" "https://github.com/Tencent/ncnn/releases/download/${NCNN_VERSION}/ncnn-${NCNN_VERSION}-ubuntu-2204-shared.zip"
 
 # Deploy tools
 ENV NCNN_HOME="${WORK_SPACE}/ncnn"
